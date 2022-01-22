@@ -1,1 +1,82 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
 /* You can add global styles to this file, and also import other style files */
+body,
+html,
+root {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+body{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url("./assets/home/background-home-desktop.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.toolbar .logo {
+  background: url("./assets/shared/logo.svg");
+  width: 3em;
+  height: 3em;
+  color: black;
+  margin-left: 1em;
+}
+
+.toolbar .menu-hamburguer{
+  background: url("./assets/shared/icon-hamburger.svg");
+}
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  body{
+    background: url("./assets/home/background-home-mobile.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 577px) and (max-width: 768px) {
+  body{
+    background: url("./assets/home/background-home-tablet.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 769px) and (max-width: 992px) {
+  body{
+    background: url("./assets/home/background-home-tablet.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 993px) and (max-width: 1200px) {
+  body{
+    background: url("./assets/home/background-home-desktop.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1201px) and (max-width: 1400px) {
+  body{
+    background: url("./assets/home/background-home-desktop.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+}

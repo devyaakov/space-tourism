@@ -1,0 +1,15 @@
+<div class="toolbar">
+  <div class="column1"><div class="logo"></div><div></div></div>
+  <div class="column3">
+    <a class="menu-hamburguer" (click)="onClickMenu()"></a>
+  </div>
+  <div class="column2">
+    <div [ngClass]="{ 'container-items' : !showItems }">
+      <div *ngFor="let item of items; let i = index">
+        <div [ngClass]="{'item': true, 'selected' : item.seleted }" (click)="onClick(i)">
+          <span>0{{i}}</span>{{ item.name }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

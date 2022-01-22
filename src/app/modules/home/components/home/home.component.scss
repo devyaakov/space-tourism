@@ -1,0 +1,64 @@
+.home {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  top: calc(55% - 4.5em);
+}
+
+.home > div {
+  position: relative;
+  align-items: flex-start;
+  width: 50%;
+  height: 45%;
+}
+
+.home > div:first-child > div{
+  width: 52%;
+}
+.home > div:first-child > div > div:first-child{
+  margin: 1em;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  letter-spacing: 0.1em;
+}
+
+.home > div:first-child > div > div:nth-child(2){
+  font-size: 6em;
+  // margin: 1em;
+  margin: 0.3em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.home > div:first-child > div > div:nth-child(3){
+  text-align: center;
+  padding: 0.8em;
+}
+
+.home > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home > div:last-child{
+  display: flex;
+  width: 15.625em;
+  height: 15.625em;
+  margin: auto;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+  background: #FFF;
+  text-align: center;
+  color: black;;
+}
+.home > div:last-child > span{
+  margin: auto;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+@media (max-width: 576px) {
+  .home > div{
+    width: 100%;
+  }
+}
