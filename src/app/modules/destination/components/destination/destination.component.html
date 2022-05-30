@@ -1,1 +1,17 @@
-<p>destination works!</p>
+<div class="content">
+  <div class="col1">
+    <div class="title">01 PICK YOUR DESTINATION</div>
+    <img src="{{selected.images.png}}" alt="">
+  </div>
+  <div class="col2">
+    <div class="options">
+      <div *ngFor="let elem of data; let ind = index" (click)="onClick(ind)" [ngClass]="{ 'selected': elem.name == selected.name}" >{{elem.name}}</div>
+    </div>
+    <div class="name">{{selected.name}}</div>
+    <div class="description">{{selected.description}}</div>
+    <div class="info">
+      <div><div>AVG. DISTANCE</div><div>{{selected.distance}}</div></div>
+      <div><div>EST. TRAVEL TIME</div><div>{{selected.travel}}</div></div>
+    </div>
+  </div>
+</div>

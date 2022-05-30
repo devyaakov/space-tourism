@@ -1,1 +1,23 @@
-<p>technology works!</p>
+<div class="content">
+  <div class="col1">
+    <div class="title">03 SPACE LAUCH 101</div>
+    <div class="photo">
+      <img src="{{selected.images.portrait}}" alt="">
+    </div>
+    <div class="info">
+      <div class="options">
+        <div *ngFor="let elem of data; let ind = index" (click)="onClick(ind)" [ngClass]="{ 'selected': elem.name == selected.name }" ><div>{{(ind+1)}}</div></div>
+      </div>
+      <div>
+        <div class="legend">The technology...</div>
+        <div class="name">{{selected.name}}</div>
+        <div class="description">{{selected.description}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="col2">
+    <img src="{{selected.images.portrait}}" alt="">
+  </div>
+</div>
+
+

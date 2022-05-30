@@ -4,6 +4,9 @@
     <a class="menu-hamburguer" (click)="onClickMenu()"></a>
   </div>
   <div class="column2">
+    <div class="container-close" *ngIf="showItems">
+      <div class="close" (click)="onClickMenu()"></div>
+    </div>
     <div [ngClass]="{ 'container-items' : !showItems }">
       <div *ngFor="let item of items; let i = index">
         <div [ngClass]="{'item': true, 'selected' : item.seleted }" (click)="onClick(i)">

@@ -1,1 +1,18 @@
-<p>crew works!</p>
+<div class="content">
+  <div class="col1">
+    <div class="title">02 MEET YOUR CREW</div>
+    <div class="photo">
+      <img src="{{selected.images.png}}" alt="">
+    </div>
+    <div class="role">{{selected.role}}</div>
+    <div class="name">{{selected.name}}</div>
+    <div class="bio">{{selected.bio}}</div>
+    <div>
+      <div *ngFor="let elem of data; let ind = index" (click)="onClick(ind)" [ngClass]="{ 'selected': elem.name == selected.name }"></div>
+    </div>
+  </div>
+  <div class="col2">
+    <img src="{{selected.images.png}}" alt="">
+  </div>
+</div>
+

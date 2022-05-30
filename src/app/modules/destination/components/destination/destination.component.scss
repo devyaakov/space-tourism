@@ -1,0 +1,112 @@
+.content {
+  position: relative;
+  display: inline-flex;
+  margin-top: 9em;
+  width: 100%;
+
+}
+.content > .col1{
+  position: relative;
+  width: 50%;
+  text-align: center;
+}
+
+.content .col1 .title {
+  margin-bottom: 5em;
+}
+
+.content > .col2{
+  position: relative;
+  width: 50%;
+  margin-top: 3em;
+}
+
+.content > .col2 > .options{
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.content > .col2 > .options > div {
+  position: relative;
+  margin-right: 20px;
+}
+
+.content > .col2 > .name{
+  font-size: 5.5em;
+}
+
+.content > .col2 > .description{
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.content > .col2 > .info{
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+}
+
+.content > .col2 > .info > div {
+  position: relative;
+  width: 50%;
+}
+
+.content > .col2 > .info > div > div:nth-child(2){
+  font-size: 2.5em;
+}
+
+.content .col2 .options > div.selected::after{
+  position: absolute;
+  content: " ";
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #FFF;
+
+}
+
+@media (max-width: 992px) {
+  .content{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 0;
+  }
+  .content .col1{
+    width: 100%;
+  }
+
+  .content .col1 .title {
+    margin-bottom: 1em;
+  }
+
+  .content .col1 img
+  {
+    height: 150px;
+  }
+
+  .content .col2
+  {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .content > .col2 > .name{
+    margin-top: 0.5em;
+    font-size: 3em;
+  }
+
+  .content > .col2 > .info > div > div:nth-child(2){
+    font-size: 1.8em;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 577px) and (max-width: 992px) {
+  .content .col1 img{
+    height: 577px;
+  }
+}
